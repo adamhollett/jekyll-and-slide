@@ -2,6 +2,11 @@
 permalink:            pretty
 relative_permalinks:  true           # Ensures post links from the index work properly.
 
+# reveal options
+reveal:
+  slide_separator:    '<hr>'
+  vertical_separator: '~~'
+
 # Setup
 title:                Jekyll and Slide
 tagline:              'Markdown slides in Jekyll using reveal.js'

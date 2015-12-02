@@ -51,7 +51,7 @@
 
   <body>
 
-    {% assign page_slides = content | split: "<hr>" %}
+    {% assign page_slides = content | split: site.reveal.slide_separator %}
 
     <div class="reveal">
       <div class="slides">
@@ -68,7 +68,7 @@
 
           <section>
 
-            {% assign vertical_slides = slide | split: "~~" %}
+            {% assign vertical_slides = slide | split: site.reveal.vertical_separator %}
 
             {% if vertical_slides %}
               {% for vertical_slide in vertical_slides %}

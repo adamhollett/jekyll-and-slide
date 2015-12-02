@@ -1,6 +1,7 @@
 ---
 title: reveal.js
 description: The HTML presentation framework
+theme: black
 ---
 
 ## Hello there
