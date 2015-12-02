@@ -112,3 +112,88 @@ You can select from different transitions, like:
 -   [Convex](?transition=convex#/7)
 -   [Concave](?transition=concave#/7)
 -   [Zoom](?transition=zoom#/7)
+
+----
+
+## Pretty code
+
+```js
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+```
+
+Code syntax highlighting courtesy of [Pygments](http://pygments.org).
+
+----
+
+## Marvelous lists
+
+-   No order here
+-   Or here
+-   Or here
+-   Or here
+
+----
+
+## Fantastic ordered lists
+
+1.  One is smaller than...
+2.  Two is smaller than...
+3.  Three!
+
+----
+
+## Tabular tables
+
+<table>
+<thead>
+  <tr>
+    <th>Item</th>
+    <th>Value</th>
+    <th>Quantity</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Apples</td>
+    <td>$1</td>
+    <td>7</td>
+  <tr>
+  <tr>
+    <td>Lemonade</td>
+    <td>$2</td>
+    <td>18</td>
+  <tr>
+  <tr>
+    <td>Bread</td>
+    <td>$3</td>
+    <td>2</td>
+  <tr>
+</tbody>
+</table>
+
+----
+
+## Clever quotes
+
+These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+
+> &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+
+----
+
+## Intergalactic Interconnections
+
+You can link between slides internally, [like this](#/2/3).
