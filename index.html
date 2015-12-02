@@ -1,0 +1,10 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for deck in site.slides %}
+    <h3><a href="{{ site.baseurl }}{{ deck.url }}">{{ deck.title }}</a></h3>
+  {% endfor %}
+</div>
