@@ -14,11 +14,11 @@ Jekyll and Slide is a skeleton [Jekyll](http://jekyllrb.com) site that embeds ha
 
 ## Usage
 
-Create new slideshows by writing `.md` files in the `_slides` directory. Use [slide separators](#slide-separators) in your Markdown to create individual slides.
+Create a site by cloning or downloading this repository. Navigate to the directory where you copied it and run `jekyll serve` to view the site in your browser at `localhost:4000`. Press `ctrl` + `C` in your terminal to stop the server.
+
+Create new slideshows by writing `.md` files in the `_slides` directory. Use [slide separators](#slide-separators) in your Markdown to create individual slides. `index.html` lists all the slideshows in the `_slides` directory.
 
 If you want to use more complicated reveal.js features like fragments, you can just switch to HTML.
-
-`index.html` lists all the slideshows in the `_slides` directory.
 
 ### Title slide
 
