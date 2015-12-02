@@ -62,7 +62,7 @@ Write content using inline or external Markdown.
 
 Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
 
-```
+```html
 <section data-markdown>
   ## Markdown support
 

@@ -27,6 +27,7 @@
     {% else %}
       <link rel="stylesheet" href="{{ "/reveal.js/css/theme/white.css" | prepend: site.baseurl }}" id="theme"/>
     {% endif %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
@@ -106,7 +107,6 @@
         // Optional reveal.js plugins
         dependencies: [
           { src: '{{ "/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
-          { src: '{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
           { src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
         ]
