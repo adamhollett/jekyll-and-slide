@@ -1,19 +1,44 @@
 # Jekyll and Slide
 
-Jekyll and Slide is a skeleton [Jekyll](http://jekyllrb.com) site that embeds [hakimel's reveal.js](//github.com/hakimel/reveal.js) framework for creating slideshows, letting you quickly write slideshows with Markdown.
+Jekyll and Slide is a skeleton [Jekyll](http://jekyllrb.com) site that embeds hakimel's [reveal.js](//github.com/hakimel/reveal.js) framework for creating slideshows, letting you quickly write slideshows with Markdown. The site theme is [Lanyon](//github.com/poole/lanyon) by [mdo](//github.com/mdo).
 
 ## Contents
 
 -   [Usage](#usage)
 -   [Options](#options)
+    -   [Slide separators](#slide-separators)
     -   [Themes](#themes)
 -   [Development](#development)
 -   [Author](#author)
 -   [License](#license)
 
+## Usage
+
+Create new slideshows by writing `.md` files in the `_slides` directory. Use [slide separators](#slide-separators) in your Markdown to create individual slides.
+
+If you want to use more complicated reveal.js features like fragments, you can just switch to HTML.
+
+`index.html` lists all the slideshows in the `_slides` directory.
+
+### Title slide
+
+By default, the first slide in a slideshow displays the slideshow title, URL, and description. You can disable this by editing `_layouts/slides.html`.
+
 ## Options
 
-You can customize Jekyll and Slide in a few ways.
+You can customize Jekyll and Slide in a few ways:
+
+### Slide separators
+
+You can define what characters to use as slide separators in `_config.yml`. By default these are:
+
+```yaml
+reveal:
+  slide_separator:    '<hr>'
+  vertical_separator: '~~'
+```
+
+Slide separators are evaluated **after** the slide Markdown is rendered into HTML. As a result, you can write `----` for separators in your Markdown files, but Jekyll interprets them as `<hr>`s.
 
 ### Themes
 
