@@ -5,7 +5,8 @@ relative_permalinks:  true           # Ensures post links from the index work pr
 # reveal options
 reveal:
   slide_separator:    '<hr>'
-  vertical_separator: '~~'
+  vertical_separator: '<p>~~</p>'
+  title_slide:        true
 
 # Setup
 title:                Jekyll and Slide
