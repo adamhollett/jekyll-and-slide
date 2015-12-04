@@ -7,6 +7,7 @@ Jekyll and Slide is a skeleton [Jekyll](http://jekyllrb.com) site that embeds ha
 -   [Usage](#usage)
 -   [Options](#options)
     -   [Slide separators](#slide-separators)
+    -   [Title slide](#title-slide)
     -   [Themes](#themes)
 -   [Development](#development)
 -   [Author](#author)
@@ -40,9 +41,18 @@ reveal:
 
 Slide separators are evaluated **after** the slide Markdown is rendered into HTML. As a result, you can write `----` and `~~` for separators in your Markdown files, but Jekyll interprets them as `<hr>` and `<p>~~</p>`.
 
+### Title slide
+
+```yaml
+reveal:
+  title_slide: true
+```
+
+Slideshows will begin with a slide that shows the title, URL, and description defined in the file's front matter.
+
 ### Themes
 
-You can optionally specify a theme for slide decks in the front matter:
+You can optionally specify a theme for slide decks in the front matter of a `.md` file:
 
 ```yaml
 ---
