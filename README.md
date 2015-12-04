@@ -35,10 +35,10 @@ You can define what characters to use as slide separators in `_config.yml`. By d
 ```yaml
 reveal:
   slide_separator:    '<hr>'
-  vertical_separator: '~~'
+  vertical_separator: '<p>~~</p>'
 ```
 
-Slide separators are evaluated **after** the slide Markdown is rendered into HTML. As a result, you can write `----` for separators in your Markdown files, but Jekyll interprets them as `<hr>`s.
+Slide separators are evaluated **after** the slide Markdown is rendered into HTML. As a result, you can write `----` and `~~` for separators in your Markdown files, but Jekyll interprets them as `<hr>` and `<p>~~</p>`.
 
 ### Themes
 
