@@ -58,18 +58,16 @@ Presentations look great on touch devices, like mobile phones and tablets. Simpl
 
 ## Markdown support
 
-Write content using inline or external Markdown.
+Write content using pure Markdown.
 
-Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+Instructions and more info available in the [readme](https://github.com/admhlt/jekyll-and-slide).
 
 ```html
-<section data-markdown>
   ## Markdown support
 
-  Write content using inline or external Markdown.
+  Write content using pure Markdown.
 
-  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-</section>
+  Instructions and more info available in the [readme](https://github.com/admhlt/jekyll-and-slide).
 ```
 
 ----
@@ -134,7 +132,7 @@ function linkify( selector ) {
 }
 ```
 
-Code syntax highlighting courtesy of [Pygments](http://pygments.org).
+Code syntax highlighting courtesy of [Rouge](http://rouge.jneen.net).
 
 ----
 
