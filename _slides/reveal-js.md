@@ -157,32 +157,11 @@ Code syntax highlighting courtesy of [Pygments](http://pygments.org).
 
 ## Tabular tables
 
-<table>
-<thead>
-  <tr>
-    <th>Item</th>
-    <th>Value</th>
-    <th>Quantity</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Apples</td>
-    <td>$1</td>
-    <td>7</td>
-  <tr>
-  <tr>
-    <td>Lemonade</td>
-    <td>$2</td>
-    <td>18</td>
-  <tr>
-  <tr>
-    <td>Bread</td>
-    <td>$3</td>
-    <td>2</td>
-  <tr>
-</tbody>
-</table>
+| Item     | Value | Quantity |
+|-----------------------------|
+| Apples   |    $1 |        7 |
+| Lemonade |    $2 |       18 |
+| Bread    |    $3 |        2 |
 
 ----
 
@@ -194,6 +173,24 @@ These guys come in two forms, inline: <q cite="http://searchservervirtualization
 
 ----
 
-## Intergalactic Interconnections
+## Intergalactic interconnections
 
 You can link between slides internally, [like this](#/2/3).
+
+----
+
+## Speaker view
+
+There's a [speaker view](https://github.com/hakimel/reveal.js#speaker-notes). It includes a timer, preview of the upcoming slide as well as your speaker notes.
+
+Press the **S** key to try it out.
+
+Notes:
+
+Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit S on your keyboard).
+
+----
+
+## Take a moment
+
+Press **B** or **.** on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.

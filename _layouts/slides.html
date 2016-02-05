@@ -29,9 +29,6 @@
     {% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
 
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
-
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -57,6 +54,9 @@
     <div class="reveal">
       <div class="slides">
 
+        {% if content contains site.reveal.slide_separator %}
+        {% assign page_slides = content | split: site.reveal.slide_separator %}
+
         {% if site.reveal.title_slide %}
           {% include title-slide.html %}
         {% endif %}
@@ -65,21 +65,55 @@
 
           <section>
 
+            {% if slide contains site.reveal.vertical_separator %}
             {% assign vertical_slides = slide | split: site.reveal.vertical_separator %}
 
-            {% if vertical_slides %}
               {% for vertical_slide in vertical_slides %}
+
                 <section>
-                  {{ vertical_slide }}
+                  {% if vertical_slide contains site.reveal.notes_separator %}
+                  {% assign slide_content = vertical_slide | split: site.reveal.notes_separator | first %}
+                  {% assign slide_notes = vertical_slide | split: site.reveal.notes_separator | last %}
+
+                    {{ slide_content }}
+
+                    <aside class="notes">
+                      {{ slide_notes }}
+                    </aside>
+
+                  {% else %}
+
+                    {{ vertical_slide }}
+
+                  {% endif %}
                 </section>
+
               {% endfor %}
+
             {% else %}
-              {{ slide }}
+
+              {% if slide contains site.reveal.notes_separator %}
+              {% assign slide_content = slide | split: site.reveal.notes_separator | first %}
+              {% assign slide_notes = slide | split: site.reveal.notes_separator | last %}
+
+                {{ slide_content }}
+
+                <aside class="notes">
+                  {{ slide_notes }}
+                </aside>
+
+              {% else %}
+
+                {{ slide }}
+
+              {% endif %}
             {% endif %}
 
           </section>
 
         {% endfor %}
+
+        {% endif %}
 
       </div>
     </div>

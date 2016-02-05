@@ -1,21 +1,22 @@
 # Permalinks
 permalink:            pretty
-relative_permalinks:  true           # Ensures post links from the index work properly.
 
 # reveal options
 reveal:
-  slide_separator:    '<hr>'
-  vertical_separator: '<p>~~</p>'
+  slide_separator:    "<hr />"
+  vertical_separator: "<p>~~</p>"
+  notes_separator:    "<p>Notes:</p>"
   title_slide:        true
 
 # Setup
 title:                Jekyll and Slide
-tagline:              'Markdown slides in Jekyll using reveal.js'
-description:          'A template for creating slide decks using Markdown and <a href="//jekyllrb.com">Jekyll</a>, using <a href="//github.com/poole/lanyon">Lanyon</a> by <a href="//twitter.com/mdo">@mdo</a>.'
+tagline:              "Markdown slides in Jekyll using reveal.js"
+description:          "A template for creating slide decks using Markdown and <a href='//jekyllrb.com'>Jekyll</a>, using <a href='//github.com/poole/lanyon'>Lanyon</a> by <a href='//twitter.com/mdo'>@mdo</a>."
 url:                  http://admhlt.github.io/jekyll-and-slide
-baseurl:              ''
-paginate:             5
-markdown:             redcarpet
+baseurl:              ""
+markdown:             kramdown
+kramdown:
+  input:              GFM
 
 collections:
   slides:

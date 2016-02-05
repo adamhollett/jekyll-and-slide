@@ -21,10 +21,6 @@ Create new slideshows by writing `.md` files in the `_slides` directory. Use [sl
 
 If you want to use more complicated reveal.js features like fragments, you can just switch to HTML.
 
-### Title slide
-
-By default, the first slide in a slideshow displays the slideshow title, URL, and description. You can disable this by editing `_layouts/slides.html`.
-
 ## Options
 
 You can customize Jekyll and Slide in a few ways:
@@ -35,11 +31,12 @@ You can define what characters to use as slide separators in `_config.yml`. By d
 
 ```yaml
 reveal:
-  slide_separator:    '<hr>'
-  vertical_separator: '<p>~~</p>'
+  slide_separator:    "<hr />"
+  vertical_separator: "<p>~~</p>"
+  notes_separator:    "<p>Notes:</p>"
 ```
 
-Slide separators are evaluated **after** the slide Markdown is rendered into HTML. As a result, you can write `----` and `~~` for separators in your Markdown files, but Jekyll interprets them as `<hr>` and `<p>~~</p>`.
+Slide separators are evaluated **after** the slide Markdown is rendered into HTML. So you can write `----` and `~~` for separators in your Markdown files, but Jekyll interprets them as `<hr />` and `<p>~~</p>`.
 
 ### Title slide
 
