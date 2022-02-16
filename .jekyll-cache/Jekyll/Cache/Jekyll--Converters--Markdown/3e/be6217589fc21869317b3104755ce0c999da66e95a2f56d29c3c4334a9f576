@@ -1,0 +1,216 @@
+I"�<h2 id="hello-there">Hello there</h2>
+
+<p>reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.</p>
+
+<hr />
+
+<h2 id="vertical-slides">Vertical slides</h2>
+
+<p>Slides can be nested inside of each other.</p>
+
+<p>Use the <strong>Space</strong> key to navigate through all slides.</p>
+
+<p><a href="#" class="navigate-down">
+  <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow" />
+</a></p>
+
+<p>~~</p>
+
+<h2 id="basement-level-1">Basement level 1</h2>
+
+<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+
+<p>~~</p>
+
+<h2 id="basement-level-2">Basement level 2</h2>
+
+<p>That’s it, time to go back up.</p>
+
+<p><a href="#/2">
+  <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);" />
+</a></p>
+
+<hr />
+
+<h2 id="slides">Slides</h2>
+
+<p>Not a coder? Not a problem. There’s a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com">slides.com</a>.</p>
+
+<hr />
+
+<h2 id="point-of-view">Point of view</h2>
+
+<p>Hold down <strong>alt</strong> and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. <strong>alt</strong> + <strong>click</strong> anywhere to zoom back out.</p>
+
+<hr />
+
+<h2 id="touch-optimized">Touch optimized</h2>
+
+<p>Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.</p>
+
+<hr />
+
+<h2 id="markdown-support">Markdown support</h2>
+
+<p>Write content using pure Markdown.</p>
+
+<p>Instructions and more info available in the <a href="https://github.com/admhlt/jekyll-and-slide">readme</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ## Markdown support
+
+  Write content using pure Markdown.
+
+  Instructions and more info available in the [readme](https://github.com/admhlt/jekyll-and-slide).
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="fragments">Fragments</h2>
+
+<p>Hit the next arrow…</p>
+
+<p><span class="fragment">… to step through …</span></p>
+
+<p><span class="fragment">… a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+<p>~~</p>
+
+<h2 id="fragment-styles">Fragment Styles</h2>
+
+<p>There’s different types of fragments, like:</p>
+
+<p class="fragment grow">grow</p>
+
+<p class="fragment shrink">shrink</p>
+
+<p class="fragment fade-out">fade-out</p>
+
+<p class="fragment current-visible">current-visible</p>
+
+<p class="fragment highlight-red">highlight-red</p>
+
+<p class="fragment highlight-blue">highlight-blue</p>
+
+<hr />
+
+<h2 id="transition-styles">Transition styles</h2>
+
+<p>You can select from different transitions, like:</p>
+
+<ul>
+  <li><a href="?transition=none#/7">None</a></li>
+  <li><a href="?transition=fade#/7">Fade</a></li>
+  <li><a href="?transition=slide#/7">Slide</a></li>
+  <li><a href="?transition=convex#/7">Convex</a></li>
+  <li><a href="?transition=concave#/7">Concave</a></li>
+  <li><a href="?transition=zoom#/7">Zoom</a></li>
+</ul>
+
+<hr />
+
+<h2 id="pretty-code">Pretty code</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">linkify</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span> <span class="nx">supports3DTransforms</span> <span class="p">)</span> <span class="p">{</span>
+
+    <span class="kd">var</span> <span class="nx">nodes</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">);</span>
+
+    <span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+
+      <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">node</span><span class="p">.</span><span class="nx">className</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">node</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1"> roll</span><span class="dl">'</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Code syntax highlighting courtesy of <a href="http://rouge.jneen.net">Rouge</a>.</p>
+
+<hr />
+
+<h2 id="marvelous-lists">Marvelous lists</h2>
+
+<ul>
+  <li>No order here</li>
+  <li>Or here</li>
+  <li>Or here</li>
+  <li>Or here</li>
+</ul>
+
+<hr />
+
+<h2 id="fantastic-ordered-lists">Fantastic ordered lists</h2>
+
+<ol>
+  <li>One is smaller than…</li>
+  <li>Two is smaller than…</li>
+  <li>Three!</li>
+</ol>
+
+<hr />
+
+<h2 id="tabular-tables">Tabular tables</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Value</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apples</td>
+      <td>$1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Lemonade</td>
+      <td>$2</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Bread</td>
+      <td>$3</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="clever-quotes">Clever quotes</h2>
+
+<p>These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">“The nice thing about standards is that there are so many to choose from”</q> and block:</p>
+
+<blockquote>
+  <p>“For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.”</p>
+</blockquote>
+
+<hr />
+
+<h2 id="intergalactic-interconnections">Intergalactic interconnections</h2>
+
+<p>You can link between slides internally, <a href="#/2/3">like this</a>.</p>
+
+<hr />
+
+<h2 id="speaker-view">Speaker view</h2>
+
+<p>There’s a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+
+<p>Press the <strong>S</strong> key to try it out.</p>
+
+<p>Notes:</p>
+
+<p>Oh hey, these are some notes. They’ll be hidden in your presentation, but you can see them if you open the speaker notes window (hit S on your keyboard).</p>
+
+<hr />
+
+<h2 id="take-a-moment">Take a moment</h2>
+
+<p>Press <strong>B</strong> or <strong>.</strong> on your keyboard to pause the presentation. This is helpful when you’re on stage and want to take distracting slides off the screen.</p>
+:ET
