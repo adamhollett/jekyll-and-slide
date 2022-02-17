@@ -12,7 +12,7 @@ reveal:
 title: Talks 
 tagline: "Markdown slides in Jekyll using reveal.js"
 description: "A template for creating slide decks using Markdown and <a href='//jekyllrb.com'>Jekyll</a>, using <a href='//github.com/poole/lanyon'>Lanyon</a> by <a href='//twitter.com/mdo'>@mdo</a>."
-url: http://r0x0d.github.io/
+url: http://r0x0d.github.io/talks
 baseurl: /talks
 markdown: kramdown
 kramdown:
@@ -36,3 +36,5 @@ defaults:
       type: slides
     values:
       layout: slides
+
+include: [reveal.js]
