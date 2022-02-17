@@ -36,5 +36,3 @@ defaults:
       type: slides
     values:
       layout: slides
-
-include: [reveal.js]
