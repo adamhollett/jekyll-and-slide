@@ -17,7 +17,9 @@ repos:
   rev: v8.9.0
   hooks:
   - id: eslint
+    exclude: ^(_site/|README.md|public/reveal.js)
 - repo: https://github.com/pre-commit/mirrors-jshint
   rev: v2.13.4
   hooks:
   - id: jshint
+    exclude: ^(_site/|README.md|public/reveal.js)

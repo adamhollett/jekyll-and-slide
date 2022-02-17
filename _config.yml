@@ -9,9 +9,9 @@ reveal:
   title_slide: true
 
 # Setup
-title: Talks 
-tagline: "Markdown slides in Jekyll using reveal.js"
-description: "A template for creating slide decks using Markdown and <a href='//jekyllrb.com'>Jekyll</a>, using <a href='//github.com/poole/lanyon'>Lanyon</a> by <a href='//twitter.com/mdo'>@mdo</a>."
+title: Talks
+tagline: "My public talks organized into one place."
+description: "My public talks organized into one place."
 url: http://r0x0d.github.io/talks
 baseurl: /talks
 markdown: kramdown
@@ -25,7 +25,7 @@ collections:
 
 # About/contact
 author:
-  name: Rodolfo Olivieri 
+  name: Rodolfo Olivieri
   url: https://twitter.com/r0x0d
   email: rodolfo.olivieri3@gmail.com
 
